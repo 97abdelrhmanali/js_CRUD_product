@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+        <div class="w-75 mx-auto my-5">
+
+            <h1 class="text-center mb-5 text-primary">Our Store</h1>
+
+            
+            <label class="text-primary">Product Name</label>
+            <input id="pNameId" class="form-control mb-3">
+        
+            <label class="text-primary">Product Price</label>
+            <input id="pPriceId" class="form-control mb-3">
+        
+            <label class="text-primary">Product Category</label>
+            <input id="pCatId" class="form-control mb-3">
+        
+            <label class="text-primary">Product Description</label>
+            <textarea id="pDescId" class="form-control mb-3"></textarea>
+
+            <button onclick="addProduct()" class="my-3 btn btn-primary">Add Product</button>
+        
+            <input id="searchInputId" onkeyup="searchProduct()"  placeholder="Search Prouct Name" class="w-50 mx-auto form-control" >
+
+
+
+
+
+
+            <table class="table my-5 text-center">
+
+                <thead class=" bg-dark text-white">
+                    <th>Product Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th class="text-warning">Update</th>
+                    <th class="text-danger">Delete</th>
+                    
+                </thead>
+
+                <tbody id="tBody">
+
+
+
+
+                </tbody>
+
+            </table>
+
+
+
+        </div>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="js/mine.js"></script>
+    </body>
+</html>
